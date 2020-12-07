@@ -337,7 +337,7 @@ def solve(G, s):
 if __name__ == '__main__':
     inputs = glob.glob('inputs/small/*')
     for input_path in inputs:
-        if input_path != 'new':
+        if input_path != 'inputs/small/new':
             output_path = 'outputs/small/' + os.path.basename(os.path.normpath(input_path))[:-3] + '.out'
             G, s = read_input_file(input_path, 100)
             D, k = solve(G, s)
