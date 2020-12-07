@@ -68,7 +68,7 @@ def solve(G, s):
             temp = calculate_happiness(rooms, G)
             if temp > maxHap:
                 maxHap = temp
-                maxRooms = rooms
+                maxRooms = dict(rooms)
                 maxNumRooms = numRooms
     rooms = {}
     used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
@@ -84,7 +84,7 @@ def solve(G, s):
                     temp = calculate_happiness(rooms, G)
                     if temp > maxHap:
                         maxHap = temp
-                        maxRooms = rooms
+                        maxRooms = dict(rooms)
                         maxNumRooms = numRooms
             rooms = {}
             used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
@@ -107,7 +107,7 @@ def solve(G, s):
                             temp = calculate_happiness(rooms, G)
                             if temp > maxHap:
                                 maxHap = temp
-                                maxRooms = rooms
+                                maxRooms = dict(rooms)
                                 maxNumRooms = numRooms
                     rooms = dict(rooms1)
                     used = set(used1)
@@ -139,7 +139,7 @@ def solve(G, s):
                                     temp = calculate_happiness(rooms, G)
                                     if temp > maxHap:
                                         maxHap = temp
-                                        maxRooms = rooms
+                                        maxRooms = dict(rooms)
                                         maxNumRooms = numRooms
                             rooms = dict(rooms2)
                             used = set(used2)

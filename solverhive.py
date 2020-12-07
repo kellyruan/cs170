@@ -68,7 +68,7 @@ def solve(G, s):
             temp = calculate_happiness(rooms, G)
             if temp > maxHap:
                 maxHap = temp
-                maxRooms = rooms
+                maxRooms = dict(rooms)
                 maxNumRooms = numRooms
     rooms = {}
     used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
@@ -84,7 +84,7 @@ def solve(G, s):
                     temp = calculate_happiness(rooms, G)
                     if temp > maxHap:
                         maxHap = temp
-                        maxRooms = rooms
+                        maxRooms = dict(rooms)
                         maxNumRooms = numRooms
             rooms = {}
             used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
@@ -107,7 +107,7 @@ def solve(G, s):
                             temp = calculate_happiness(rooms, G)
                             if temp > maxHap:
                                 maxHap = temp
-                                maxRooms = rooms
+                                maxRooms = dict(rooms)
                                 maxNumRooms = numRooms
                     rooms = dict(rooms1)
                     used = set(used1)
@@ -139,7 +139,7 @@ def solve(G, s):
                                     temp = calculate_happiness(rooms, G)
                                     if temp > maxHap:
                                         maxHap = temp
-                                        maxRooms = rooms
+                                        maxRooms = dict(rooms)
                                         maxNumRooms = numRooms
                             rooms = dict(rooms2)
                             used = set(used2)
@@ -147,49 +147,50 @@ def solve(G, s):
                     used = set(used1)
             rooms = {}
             used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
-    numRooms = 5
-    for i in range(1, 10):
-        for comb1 in itertools.combinations(used, i):
-            for student in comb1:
-                rooms[student] = 0
-                used.remove(student)
-            rooms1 = dict(rooms)
-            used1 = set(used)
-            for j in range(1, 10-i):
-                for comb2 in itertools.combinations(used, j):
-                    for student in comb2:
-                        rooms[student] = 1
-                        used.remove(student)
-                    rooms2 = dict(rooms)
-                    used2 = set(used)
-                    for k in range(1, 10-i-j):
-                        for comb3 in itertools.combinations(used, k):
-                            for student in comb3:
-                                rooms[student] = 2
-                                used.remove(student)
-                            rooms3 = dict(rooms)
-                            used3 = set(used)
-                            for l in range(1, 10-i-j-k):
-                                for comb4 in itertools.combinations(used, l):
-                                    for student in comb4:
-                                        rooms[student] = 3
-                                        used.remove(student)
-                                    for student in used:
-                                        rooms[student] = 4
-                                    if is_valid_solution(rooms, G, s, numRooms):
-                                            temp = calculate_happiness(rooms, G)
-                                            if temp > maxHap:
-                                                maxHap = temp
-                                                maxRooms = rooms
-                                                maxNumRooms = numRooms
-                                    rooms = dict(rooms3)
-                                    used = set(used3)
-                            rooms = dict(rooms2)
-                            used = set(used2)
-                    rooms = dict(rooms1)
-                    used = set(used1)
-            rooms = {}
-            used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+    if maxHap == 0:
+        numRooms = 5
+        for i in range(1, 10):
+            for comb1 in itertools.combinations(used, i):
+                for student in comb1:
+                    rooms[student] = 0
+                    used.remove(student)
+                rooms1 = dict(rooms)
+                used1 = set(used)
+                for j in range(1, 10-i):
+                    for comb2 in itertools.combinations(used, j):
+                        for student in comb2:
+                            rooms[student] = 1
+                            used.remove(student)
+                        rooms2 = dict(rooms)
+                        used2 = set(used)
+                        for k in range(1, 10-i-j):
+                            for comb3 in itertools.combinations(used, k):
+                                for student in comb3:
+                                    rooms[student] = 2
+                                    used.remove(student)
+                                rooms3 = dict(rooms)
+                                used3 = set(used)
+                                for l in range(1, 10-i-j-k):
+                                    for comb4 in itertools.combinations(used, l):
+                                        for student in comb4:
+                                            rooms[student] = 3
+                                            used.remove(student)
+                                        for student in used:
+                                            rooms[student] = 4
+                                        if is_valid_solution(rooms, G, s, numRooms):
+                                                temp = calculate_happiness(rooms, G)
+                                                if temp > maxHap:
+                                                    maxHap = temp
+                                                    maxRooms = dict(rooms)
+                                                    maxNumRooms = numRooms
+                                        rooms = dict(rooms3)
+                                        used = set(used3)
+                                rooms = dict(rooms2)
+                                used = set(used2)
+                        rooms = dict(rooms1)
+                        used = set(used1)
+                rooms = {}
+                used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
     if maxHap == 0:
         numRooms = 6
         for i in range(1, 10):
@@ -231,7 +232,7 @@ def solve(G, s):
                                                         temp = calculate_happiness(rooms, G)
                                                         if temp > maxHap:
                                                             maxHap = temp
-                                                            maxRooms = rooms
+                                                            maxRooms = dict(rooms)
                                                             maxNumRooms = numRooms
                                                 rooms = dict(rooms4)
                                                 used = set(used4)
@@ -291,7 +292,7 @@ def solve(G, s):
                                                                 temp = calculate_happiness(rooms, G)
                                                                 if temp > maxHap:
                                                                     maxHap = temp
-                                                                    maxRooms = rooms
+                                                                    maxRooms = dict(rooms)
                                                                     maxNumRooms = numRooms
                                                         rooms = dict(rooms5)
                                                         used = set(used5)
