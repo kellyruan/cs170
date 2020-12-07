@@ -104,12 +104,10 @@ def read_output_file(path, G, s):
             rooms.add(room)
 
             D[node] = room
-
         assert len(nodes) == len(G)
         assert utils.is_valid_solution(D, G, s, len(rooms))
 
     return D
-
 
 def write_output_file(D, path):
     """
