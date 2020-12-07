@@ -13,7 +13,7 @@ def validate_file(path):
         return False
     with open(path, "r") as f:
         if not re.match(r"^[\d\.\s]+$", f.read()):
-            print(f"{path} contains characters that are not numbers and spaces")
+            print("{path} contains characters that are not numbers and spaces")
             return False
     return True
 
