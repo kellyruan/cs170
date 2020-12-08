@@ -20,7 +20,7 @@ def solve(G, s):
     # TODO: your code here!
     rooms = {}
     numRooms = 1
-    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49}
     edgeCount = 0
     maxHap = 0
     maxRooms = {}
@@ -30,7 +30,7 @@ def solve(G, s):
     edges = list(G.edges(data=True))
     edges.sort(key=lambda x: x[2]["happiness"], reverse=True)
     numRooms = 1
-    for student in range(20):
+    for student in range(50):
         rooms[student] = 0
     if is_valid_solution(rooms, G, s, numRooms):
             temp = calculate_happiness(rooms, G)
@@ -79,7 +79,7 @@ def solve(G, s):
             maxRooms = dict(rooms)
             maxNumRooms = numRooms
     rooms = {}
-    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49}
     edgeCount = 0
     numRooms = 3
     stresses = s / numRooms
@@ -132,7 +132,7 @@ def solve(G, s):
             maxRooms = dict(rooms)
             maxNumRooms = numRooms
     rooms = {}
-    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49}
     edgeCount = 0
     numRooms = 4
     stresses = s / numRooms
@@ -193,7 +193,7 @@ def solve(G, s):
             maxRooms = dict(rooms)
             maxNumRooms = numRooms
     rooms = {}
-    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49}
     edgeCount = 0
     numRooms = 5
     stresses = s / numRooms
@@ -262,7 +262,7 @@ def solve(G, s):
             maxRooms = dict(rooms)
             maxNumRooms = numRooms
     rooms = {}
-    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49}
     edgeCount = 0
     numRooms = 6
     stresses = s / numRooms
@@ -339,7 +339,7 @@ def solve(G, s):
             maxRooms = dict(rooms)
             maxNumRooms = numRooms
     rooms = {}
-    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49}
     edgeCount = 0
     numRooms = 7
     stresses = s / numRooms
@@ -424,7 +424,7 @@ def solve(G, s):
             maxRooms = dict(rooms)
             maxNumRooms = numRooms
     rooms = {}
-    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49}
     edgeCount = 0
     numRooms = 8
     stresses = s / numRooms
@@ -517,7 +517,7 @@ def solve(G, s):
             maxRooms = dict(rooms)
             maxNumRooms = numRooms
     rooms = {}
-    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49}
     edgeCount = 0
     numRooms = 9
     stresses = s / numRooms
@@ -618,7 +618,7 @@ def solve(G, s):
             maxRooms = dict(rooms)
             maxNumRooms = numRooms
     rooms = {}
-    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49}
     edgeCount = 0
     numRooms = 10
     stresses = s / numRooms
@@ -727,7 +727,7 @@ def solve(G, s):
             maxRooms = dict(rooms)
             maxNumRooms = numRooms
     rooms = {}
-    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49}
     edgeCount = 0
     numRooms = 11
     stresses = s / numRooms
@@ -844,7 +844,7 @@ def solve(G, s):
             maxRooms = dict(rooms)
             maxNumRooms = numRooms
     rooms = {}
-    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49}
     edgeCount = 0
     numRooms = 12
     stresses = s / numRooms
@@ -969,7 +969,7 @@ def solve(G, s):
             maxRooms = dict(rooms)
             maxNumRooms = numRooms
     rooms = {}
-    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49}
     edgeCount = 0
 
     edges = list(G.edges(data=True))
@@ -1015,7 +1015,7 @@ def solve(G, s):
             maxRooms = dict(rooms)
             maxNumRooms = numRooms
     rooms = {}
-    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49}
     edgeCount = 0
     numRooms = 3
     stresses = s / numRooms
@@ -1068,7 +1068,7 @@ def solve(G, s):
             maxRooms = dict(rooms)
             maxNumRooms = numRooms
     rooms = {}
-    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49}
     edgeCount = 0
     numRooms = 4
     stresses = s / numRooms
@@ -1129,7 +1129,7 @@ def solve(G, s):
             maxRooms = dict(rooms)
             maxNumRooms = numRooms
     rooms = {}
-    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49}
     edgeCount = 0
     numRooms = 5
     stresses = s / numRooms
@@ -1198,7 +1198,7 @@ def solve(G, s):
             maxRooms = dict(rooms)
             maxNumRooms = numRooms
     rooms = {}
-    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49}
     edgeCount = 0
     numRooms = 6
     stresses = s / numRooms
@@ -1275,7 +1275,7 @@ def solve(G, s):
             maxRooms = dict(rooms)
             maxNumRooms = numRooms
     rooms = {}
-    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49}
     edgeCount = 0
     numRooms = 7
     stresses = s / numRooms
@@ -1360,7 +1360,7 @@ def solve(G, s):
             maxRooms = dict(rooms)
             maxNumRooms = numRooms
     rooms = {}
-    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49}
     edgeCount = 0
     numRooms = 8
     stresses = s / numRooms
@@ -1453,7 +1453,7 @@ def solve(G, s):
             maxRooms = dict(rooms)
             maxNumRooms = numRooms
     rooms = {}
-    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49}
     edgeCount = 0
     numRooms = 9
     stresses = s / numRooms
@@ -1554,7 +1554,7 @@ def solve(G, s):
             maxRooms = dict(rooms)
             maxNumRooms = numRooms
     rooms = {}
-    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49}
     edgeCount = 0
     numRooms = 10
     stresses = s / numRooms
@@ -1663,7 +1663,7 @@ def solve(G, s):
             maxRooms = dict(rooms)
             maxNumRooms = numRooms
     rooms = {}
-    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49}
     edgeCount = 0
     numRooms = 11
     stresses = s / numRooms
@@ -1780,7 +1780,7 @@ def solve(G, s):
             maxRooms = dict(rooms)
             maxNumRooms = numRooms
     rooms = {}
-    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49}
     edgeCount = 0
     numRooms = 12
     stresses = s / numRooms
@@ -1905,7 +1905,7 @@ def solve(G, s):
             maxRooms = dict(rooms)
             maxNumRooms = numRooms
     rooms = {}
-    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+    used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49}
     edgeCount = 0
 
     # # print(len(list(G.edges)))
@@ -1948,7 +1948,7 @@ def solve(G, s):
     #             maxRooms = rooms
     #             maxNumRooms = numRooms
     # rooms = {}
-    # used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+    # used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49}
     # numRooms = 2
     # for i in range(1, 20):
     #     for comb in itertools.combinations(used, i):
@@ -1964,7 +1964,7 @@ def solve(G, s):
     #                     maxRooms = rooms
     #                     maxNumRooms = numRooms
     #         rooms = {}
-    #         used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+    #         used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49}
     # numRooms = 3
     # for i in range(1, 20):
     #     for comb1 in itertools.combinations(used, i):
@@ -1989,7 +1989,7 @@ def solve(G, s):
     #                 rooms = dict(rooms1)
     #                 used = set(used1)
     #         rooms = {}
-    #         used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+    #         used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49}
     # numRooms = 4
     # for i in range(1, 20):
     #     for comb1 in itertools.combinations(used, i):
@@ -2023,7 +2023,7 @@ def solve(G, s):
     #                 rooms = dict(rooms1)
     #                 used = set(used1)
     #         rooms = {}
-    #         used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+    #         used = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49}
 
 
     # for dict in dicts:
@@ -2054,9 +2054,9 @@ def solve(G, s):
 
 # For testing a folder of inputs to create a folder of outputs, you can use glob (need to import it)
 if __name__ == '__main__':
-    inputs = glob.glob('inputs/medium/*')
+    inputs = glob.glob('inputs/large/*')
     for input_path in inputs:
-        output_path = 'outputs/medium/' + os.path.basename(os.path.normpath(input_path))[:-3] + '.out'
+        output_path = 'outputs/large/' + os.path.basename(os.path.normpath(input_path))[:-3] + '.out'
         G, s = read_input_file(input_path, 100)
         D, k = solve(G, s)
         assert is_valid_solution(D, G, s, k)
