@@ -332,7 +332,7 @@ if __name__ == '__main__':
     assert is_valid_solution(D, G, s, k)
     print("Total Happiness: {}".format(calculate_happiness(D, G)))
     output_path = 'outputs/small/new' + os.path.basename(os.path.normpath(path))[:-3] + '.out'
-    write_output_file(D, 'test.out')
+    write_output_file(D, output_path)
 
 
 # For testing a folder of inputs to create a folder of outputs, you can use glob (need to import it)
