@@ -331,6 +331,7 @@ if __name__ == '__main__':
     D, k = solve(G, s)
     assert is_valid_solution(D, G, s, k)
     print("Total Happiness: {}".format(calculate_happiness(D, G)))
+    output_path = 'outputs/small/new' + os.path.basename(os.path.normpath(input_path))[:-3] + '.out'
     write_output_file(D, 'test.out')
 
 
